@@ -13,8 +13,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
     -   [What I learned](#what-i-learned)
 -   [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,8 +29,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution URL here](https://github.com/Andro87/time-tracking-dashboard.git)
--   Live Site URL: [Live site URL here](https://time-tracking-dashboard-tawny.vercel.app/)
+-   Solution URL: [Solution URL](https://github.com/Andro87/time-tracking-dashboard.git)
+-   Live Site URL: [Live site URL](https://time-tracking-dashboard-tawny.vercel.app/)
 
 ## My process
 
