@@ -1,0 +1,25 @@
+@import "../styles/variables.scss";
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    @media screen and(min-width:$desktop) {
+        max-width: 70rem;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}
+.main_time_tracking {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    @media screen and(min-width:$tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and(min-width:$desktop) {
+        grid-column: 2 / 5;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

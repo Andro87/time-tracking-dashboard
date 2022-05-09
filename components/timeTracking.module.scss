@@ -1,0 +1,121 @@
+@import "../styles/variables.scss";
+
+.time_tracking_container {
+    border-radius: 15px;
+    padding-top: 38px;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and(min-width:$tablet) {
+        padding-top: 45px;
+    }
+}
+.work {
+    background: linear-gradient(
+        to bottom,
+        var(--LightOrange) 100px,
+        var(--DarkBlue)
+    ); /*background leaks, lg seems best solutuion for this problem*/
+}
+
+.play {
+    background: linear-gradient(
+        to bottom,
+        var(--Softblue) 100px,
+        var(--DarkBlue)
+    );
+}
+
+.study {
+    background: linear-gradient(
+        to bottom,
+        var(--LightRed) 100px,
+        var(--DarkBlue)
+    );
+}
+.exercise {
+    background: linear-gradient(
+        to bottom,
+        var(--LimeGreen) 100px,
+        var(--DarkBlue)
+    );
+}
+.social {
+    background: linear-gradient(
+        to bottom,
+        var(--Violet) 100px,
+        var(--DarkBlue)
+    );
+}
+.self_care {
+    background: linear-gradient(
+        to bottom,
+        var(--SoftOrange) 100px,
+        var(--DarkBlue)
+    );
+}
+
+.icon {
+    position: absolute;
+    right: 18px;
+    top: -12px;
+}
+
+.time_tracking {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 28px 24px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.3s ease-in;
+    background-color: var(--DarkBlue);
+    @media screen and(min-width:$tablet) {
+        padding: 30px 30px 32px;
+    }
+    &:hover {
+        background-color: var(--LightBlue);
+        cursor: pointer;
+    }
+}
+.time_activity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        font-weight: 500;
+        font-size: 1.125rem;
+    }
+}
+.ellipsis {
+    position: relative;
+    z-index: 10;
+    &:hover {
+        cursor: pointer;
+        path {
+            fill: var(--White);
+        }
+    }
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px; /**/
+    @media screen and(min-width:$tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    h2 {
+        font-weight: 300;
+        font-size: clamp(2rem, 4vw, 3.5rem);
+    }
+    p {
+        color: var(--PaleBlue);
+        font-weight: 400;
+        font-size: 0.9375rem;
+        @media screen and(min-width:$desktop) {
+            margin-top: 10px;
+        }
+    }
+}

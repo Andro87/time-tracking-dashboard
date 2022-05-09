@@ -1,0 +1,22 @@
+@import "../styles/variables.scss";
+
+.customer_btn {
+    border: none;
+    background-color: transparent;
+    font-family: "rubik";
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: var(--DesaturatedBlue);
+    text-transform: capitalize;
+    transition: all 0.3s ease-in;
+    &:hover {
+        cursor: pointer;
+        color: var(--White);
+    }
+    @media screen and(max-width:$smaller) {
+        font-size: 0.8rem;
+    }
+}
+.active {
+    color: var(--White);
+}

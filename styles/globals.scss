@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+// typography
+@font-face {
+    font-family: "rubik";
+    src: url("../public/fonts/Rubik-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "rubik";
+    src: url("../public/fonts/Rubik-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "rubik";
+    src: url("../public/fonts/Rubik-Medium.ttf");
+    font-weight: 500;
+}
+
+//colors
+:root {
+    // Primary
+
+    --Blue: hsl(246, 80%, 60%);
+    --LightOrange/* (work)*/: hsl(15, 100%, 70%);
+    --Softblue/* (play)*/: hsl(195, 74%, 62%);
+    --LightRed/*(study)*/: hsl(348, 100%, 68%);
+    --LimeGreen/* (exercise)*/: hsl(145, 58%, 55%);
+    --Violet/* (social)*/: hsl(264, 64%, 52%);
+    --SoftOrange/*(self care)*/: hsl(43, 84%, 65%);
+
+    // Neutral
+
+    --VeryDarkBlue: hsl(226, 43%, 10%);
+    --DarkBlue: hsl(235, 46%, 20%);
+    --DesaturatedBlue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+    --White: hsl(0, 0%, 100%);
+    --LightBlue: hsl(236, 41%, 34%);
+}
+body {
+    color: var(--White);
+    background-color: var(--VeryDarkBlue);
+    font-family: "rubik";
+}
+html {
+    font-size: 16px;
+}
