@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 
-import Dashboard from "../components/dashboard";
+import { Dashboard } from "components";
 export default function Home() {
     return (
         <div className={styles.main_container}>

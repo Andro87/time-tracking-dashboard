@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
-import styles from "./customer.module.scss";
+import styles from "./Customer.module.scss";
 
 interface Props {
     readonly time: ReactNode;
 }
 
-const Customer: React.FunctionComponent<Props> = props => {
+export const Customer: React.FunctionComponent<Props> = props => {
     const { time } = props;
 
     return (
@@ -20,5 +20,3 @@ const Customer: React.FunctionComponent<Props> = props => {
         </div>
     );
 };
-
-export default Customer;

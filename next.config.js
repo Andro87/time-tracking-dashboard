@@ -1,13 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true
-};
-
-module.exports = nextConfig;
 module.exports = {
-    reactStrictMode: true
-};
-const config = {
+    reactStrictMode: true,
+    i18n: {
+        locales: ["en"],
+        defaultLocale: "en"
+    },
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,
@@ -16,13 +13,5 @@ const config = {
         });
 
         return config;
-    }
-};
-
-module.exports = {
-    ...config,
-    i18n: {
-        locales: ["en"],
-        defaultLocale: "en"
     }
 };

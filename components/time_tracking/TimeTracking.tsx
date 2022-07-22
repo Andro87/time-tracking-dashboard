@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./timeTracking.module.scss";
-import Ellipsis from "../svgs/icon-ellipsis.svg";
+import styles from "./TimeTracking.module.scss";
+import Ellipsis from "svgs/icon-ellipsis.svg";
 
 interface Props {
     readonly title: string;
@@ -10,7 +10,7 @@ interface Props {
     readonly activity: string;
 }
 
-const TimeTracking: React.FunctionComponent<Props> = props => {
+export const TimeTracking: React.FunctionComponent<Props> = props => {
     const { title, current, previous, icon, activity } = props;
     return (
         <div
@@ -30,5 +30,3 @@ const TimeTracking: React.FunctionComponent<Props> = props => {
         </div>
     );
 };
-
-export default TimeTracking;

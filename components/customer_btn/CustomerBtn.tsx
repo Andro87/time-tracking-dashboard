@@ -1,7 +1,5 @@
 import React from "react";
-import styles from "./customerBtn.module.scss";
-
-import { useState } from "react";
+import styles from "./CustomerBtn.module.scss";
 
 interface Props {
     readonly title: string;
@@ -9,7 +7,7 @@ interface Props {
     readonly activeBtn: string;
 }
 
-const CustomerBtn: React.FunctionComponent<Props> = props => {
+export const CustomerBtn: React.FunctionComponent<Props> = props => {
     const { title, onChosen, activeBtn } = props;
 
     return (
@@ -23,5 +21,3 @@ const CustomerBtn: React.FunctionComponent<Props> = props => {
         </button>
     );
 };
-
-export default CustomerBtn;

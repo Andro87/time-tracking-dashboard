@@ -1,4 +1,4 @@
-@import "../styles/variables.scss";
+@use "styles/helpers" as *;
 
 .time_tracking_container {
     border-radius: 15px;
@@ -13,45 +13,45 @@
 .work {
     background: linear-gradient(
         to bottom,
-        var(--LightOrange) 100px,
-        var(--DarkBlue)
+        var(--light-orange) 100px,
+        var(--dark-blue)
     ); /*background leaks, lg seems best solutuion for this problem*/
 }
 
 .play {
     background: linear-gradient(
         to bottom,
-        var(--Softblue) 100px,
-        var(--DarkBlue)
+        var(--soft-blue) 100px,
+        var(--dark-blue)
     );
 }
 
 .study {
     background: linear-gradient(
         to bottom,
-        var(--LightRed) 100px,
-        var(--DarkBlue)
+        var(--light-red) 100px,
+        var(--dark-blue)
     );
 }
 .exercise {
     background: linear-gradient(
         to bottom,
-        var(--LimeGreen) 100px,
-        var(--DarkBlue)
+        var(--lime-green) 100px,
+        var(--dark-blue)
     );
 }
 .social {
     background: linear-gradient(
         to bottom,
-        var(--Violet) 100px,
-        var(--DarkBlue)
+        var(--violet) 100px,
+        var(--dark-blue)
     );
 }
 .self_care {
     background: linear-gradient(
         to bottom,
-        var(--SoftOrange) 100px,
-        var(--DarkBlue)
+        var(--soft-orange) 100px,
+        var(--dark-blue)
     );
 }
 
@@ -69,12 +69,12 @@
     height: 100%;
     width: 100%;
     transition: background-color 0.3s ease-in;
-    background-color: var(--DarkBlue);
+    background-color: var(--dark-blue);
     @media screen and(min-width:$tablet) {
         padding: 30px 30px 32px;
     }
     &:hover {
-        background-color: var(--LightBlue);
+        background-color: var(--light-blue);
         cursor: pointer;
     }
 }
@@ -93,7 +93,7 @@
     &:hover {
         cursor: pointer;
         path {
-            fill: var(--White);
+            fill: var(--white);
         }
     }
 }
@@ -111,7 +111,7 @@
         font-size: clamp(2rem, 4vw, 3.5rem);
     }
     p {
-        color: var(--PaleBlue);
+        color: var(--pale-blue);
         font-weight: 400;
         font-size: 0.9375rem;
         @media screen and(min-width:$desktop) {

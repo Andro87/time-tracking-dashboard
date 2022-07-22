@@ -1,4 +1,4 @@
-@import "../styles/variables.scss";
+@use "styles/helpers" as *;
 
 .customer_btn {
     border: none;
@@ -6,17 +6,17 @@
     font-family: "rubik";
     font-weight: 400;
     font-size: 1.125rem;
-    color: var(--DesaturatedBlue);
+    color: var(--desaturated-blue);
     text-transform: capitalize;
     transition: all 0.3s ease-in;
     &:hover {
         cursor: pointer;
-        color: var(--White);
+        color: var(--white);
     }
     @media screen and(max-width:$smaller) {
         font-size: 0.8rem;
     }
 }
 .active {
-    color: var(--White);
+    color: var(--white);
 }

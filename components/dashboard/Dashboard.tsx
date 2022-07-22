@@ -1,12 +1,10 @@
 import React from "react";
-import styles from "./dashboard.module.scss";
+import styles from "./Dashboard.module.scss";
 
-import Customer from "./custumer";
-import CustomerBtn from "./customerBtn";
-import TimeTracking from "./timeTracking";
-import { data } from "../data/data";
+import { Customer, CustomerBtn, TimeTracking } from "components";
+import { data } from "data/data";
 import { useState } from "react";
-const Dashboard: React.FunctionComponent = () => {
+export const Dashboard: React.FunctionComponent = () => {
     const [period, setPeriod] = useState("weekly");
     const [selected, setSelected] = useState<number>(1);
     const buttons = [
@@ -50,5 +48,3 @@ const Dashboard: React.FunctionComponent = () => {
         </main>
     );
 };
-
-export default Dashboard;
